@@ -1,0 +1,62 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+}
+
+.logo-container {
+  flex: 1;
+  text-align: right;
+}
+
+.login-form {
+  height: 440px;
+  flex: 1;
+  padding: 20px;
+  background-color: gainsboro; /* Set background color */
+  border-radius: 8px; /* Add border radius for rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange children vertically */
+  justify-content: center; /* Center align vertically */
+  align-items: center; /* Center align horizontally */
+}
+
+.logo {
+  max-width: 600px; /* Adjust logo size */
+  margin-bottom: 10px; /* Add margin for spacing*/
+} 
+
+input[type="text"],
+input[type="password"],
+#login-button,
+#register-button {
+  width: 75%;
+  margin-bottom: 10px; /* Add spacing between input fields */
+  padding: 10px;
+  border-radius: 5px; /* Add border radius for input fields */
+  border: 1px solid #ccc; /* Add border for input fields */
+}
+
+#login-button,
+#register-button {
+  background-color: #007bff; /* Set button background color */
+  color: #fff; /* Set button text color */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add transition for smoother hover effect */
+  width: 78%;
+}
+
+button:hover {
+  background-color: #0056b3; /* Change button background color on hover */
+}
+
+.error {
+  color: #dc3545; /* Set error text color */
+}
+
+.alert {
+  color: #28a745; /* Set alert text color */
+}

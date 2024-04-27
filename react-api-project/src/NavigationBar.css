@@ -1,0 +1,79 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif; /* Choose a nice and readable font */
+  font-size: 16px; /* Base font size */
+  line-height: 1.6; /* Line height for better readability */
+}
+
+/* Navigation Styles */
+.nav-container {
+  background-color: gainsboro; /* Light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  padding: 15px 20px; /* Add padding for better spacing */
+  display: flex;
+  justify-content: space-between; /* Align items to the ends */
+  align-items: center; /* Vertically center items */
+}
+
+.store-name {
+  font-weight: bold; /* Adjust font weight as needed */
+  font-size: 20px; /* Increase font size */
+}
+
+.nav-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-left: 20px; /* Adjust spacing between items */
+}
+
+.nav-item:first-child {
+  margin-left: 0; /* Remove margin for the first item */
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333; /* Dark text color */
+  font-weight: 500; /* Medium font weight */
+  transition: color 0.3s ease; /* Smooth color transition */
+  position: relative; /* Enable pseudo-element for underline */
+  font-size: 16px; /* Base font size */
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px; /* Adjust the underline position */
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: transparent; /* Initially transparent underline */
+  transition: width 0.3s ease, background-color 0.3s ease; /* Smooth width and color transition */
+}
+
+.nav-link:hover::after {
+  width: 100%; /* Full width on hover */
+  background-color: #007bff; /* Color of the underline on hover */
+}
+
+.logout-btn {
+  background-color: transparent;
+  border: 2px solid #333; /* Add border */
+  border-radius: 4px; /* Optional: Add border radius for rounded corners */
+  padding: 8px 16px; /* Add padding for better button size */
+  cursor: pointer;
+  font-size: 16px;
+  color: #333; /* Dark text color */
+  font-weight: 500; /* Medium font weight */
+  transition: color 0.3s ease, border-color 0.3s ease; /* Smooth color and border transition */
+}
+
+.logout-btn:hover {
+  color: #dc3545; /* Change color on hover */
+  border-color: #dc3545; /* Change border color on hover */
+}
